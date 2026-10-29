@@ -1,0 +1,146 @@
+/* Light theme custom colors */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #0f2747;
+  --md-accent-fg-color: #1f5fd6;
+  --md-typeset-a-color: var(--md-accent-fg-color);
+  --md-footer-bg-color: var(--md-primary-fg-color);
+}
+
+/* Dark theme custom colors */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0a1a30;
+  --md-default-bg-color: #0b1626;
+  --md-accent-fg-color: #7fa8ff;
+  --md-typeset-a-color: var(--md-accent-fg-color);
+}
+
+/* Light Theme Primary Button */
+[data-md-color-scheme="default"] .md-button--primary {
+  background-color: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="default"] .md-button--primary:hover {
+  background-color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+}
+
+/* Dark Theme Custom Button */
+[data-md-color-scheme="slate"] .md-button {
+  background-color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+  color: #0b1626;
+}
+
+/* Optional: Custom hover effects */
+[data-md-color-scheme="slate"] .md-button:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+}
+
+/* Footer Section */
+.md-footer {
+  background-color: #0b1626;
+}
+
+.md-footer-meta {
+  background-color: #0a1a30;
+}
+
+/* Testimonial cards */
+.grid.cards.testimonials {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.grid.cards.testimonials > * {
+    margin-top: 0 !important;
+}
+
+/* Style the author name and title */
+.grid.cards.testimonials p:nth-child(2) {
+    margin-top: -0.5rem;
+    color: var(--md-default-fg-color--light);
+    font-size: 0.9rem;
+}
+
+/* Impact stats */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.stat {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 12px;
+  padding: 1.1rem 1rem;
+  text-align: center;
+}
+
+.stat__value {
+  display: block;
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--md-accent-fg-color);
+}
+
+.stat__label {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Experience timeline */
+.timeline {
+  border-left: 2px solid var(--md-default-fg-color--lightest);
+  margin: 1.5rem 0 2rem 0.4rem;
+  padding-left: 1.4rem;
+}
+
+.timeline__item {
+  position: relative;
+  margin-bottom: 1.6rem;
+}
+
+.timeline__item::before {
+  content: "";
+  position: absolute;
+  left: -1.85rem;
+  top: 0.35rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: var(--md-accent-fg-color);
+}
+
+.timeline__item h3 {
+  margin: 0;
+}
+
+.timeline__meta {
+  margin: 0.2rem 0 0.5rem !important;
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Skill tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.5rem 0 1.2rem;
+}
+
+.tags span {
+  font-size: 0.72rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--md-code-bg-color);
+  color: var(--md-default-fg-color);
+}

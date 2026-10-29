@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  {% if page and page.file.src_uri == "index.md" %}
+  <!-- Structured data for search engines. Lives in <head> because instant
+       navigation re-executes body scripts as JavaScript. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "MD Farooque",
+    "url": "{{ config.site_url }}",
+    "image": "{{ config.site_url }}assets/md-farooque.jpg",
+    "email": "mailto:umarvinci@gmail.com",
+    "jobTitle": "Senior Data Scientist",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Delhi NCR",
+      "addressCountry": "IN"
+    },
+    "alumniOf": "MIT, Pune University",
+    "knowsAbout": ["Machine Learning", "Retrieval-Augmented Generation", "LLM Evaluation", "MLOps", "MLflow", "PySpark", "Google Cloud Platform"],
+    "sameAs": [
+      "https://www.linkedin.com/in/mdfarooque/",
+      "https://github.com/umarvinci"
+    ]
+  }
+  </script>
+  {% endif %}
+{% endblock %}
