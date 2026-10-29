@@ -23,7 +23,7 @@ author: MD Farooque
 
 - Need someone who can explain the results to executives, not just engineers?
 
-[Book Free Intro Call :material-arrow-top-right:](https://calendly.com/umarvinci/new-meeting){ .md-button .md-button--primary }
+[Book Free Intro Call :material-arrow-top-right:](https://calendly.com/umarvinci/introduction-call){ .md-button .md-button--primary }
 
 </div>
 
@@ -220,6 +220,6 @@ I'm also IEEE-published, and I enjoy translating complex analytical findings int
     
     Want to see if we're a match? Let's have a chat and find out. Schedule a free 30-minute session to discuss your data and AI challenges and explore how we can work together.
 
-    [Book Free Intro Call :material-arrow-top-right:](https://calendly.com/umarvinci/new-meeting){ .md-button .md-button--primary }
+    [Book Free Intro Call :material-arrow-top-right:](https://calendly.com/umarvinci/introduction-call){ .md-button .md-button--primary }
 
 </div>
